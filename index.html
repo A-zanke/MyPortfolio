@@ -2,233 +2,426 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>personal portfolio website-it's me_zanke</title>
+    <title>Ashish Vinod Zanke - Data Scientist</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/de773a8e95.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="header">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <!-- <div class="logo">AZ</div> -->
+                <h2>Ashish Zanke</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="Resume.pdf" download="Ashish_Zanke_Resume.pdf" class="resume-btn">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-sun" id="themeIcon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Ashish Zanke</span>
+                </h1>
+                <h2 class="hero-subtitle">Data Scientist & Analyst</h2>
+                <p class="hero-description">
+                    Passionate about transforming data into actionable insights. 
+                    Specializing in statistical analysis, machine learning, and data visualization.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <img src="mypic1.jpg" alt="Ashish Zanke" class="profile-img">
+                    <div class="profile-info">
+                        <h3>Ashish Vinod Zanke</h3>
+                        <p>Final Year B-Tech Student - AI&DS</p>
+                        <p>MIT, Maharashtra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
         <div class="container">
-            <nav>
-                <!--<h1 class=" logo blink"><span>A</span>shish</h1>-->
-                <div class="waviy">
-                    <span style="--i:1"><span id="z">A</span></span>
-                    <span style="--i:2">S</span>
-                    <span style="--i:3">H</span>
-                    <span style="--i:4">I</span>
-                    <span style="--i:5">S</span>
-                    <span style="--i:6">H</span>
-                     
-                 
-                </div
-
-                <img src="logo/logo1.jpg"class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#hobby">Hobby</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas  fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas  fa-bars" onclick="openmenu()"></i>
-            </nav>
-            
-            <div class="header-text">
-                <p class="typing-demo"> I'm a Web developer.!
-                    
-                </p> 
-                <h1>Hello,<br>
-                I'm <span>Ashish</span><br> zanke From Aurangabaad</h1>
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know more about my background and expertise</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Final Year Student</h3>
+                    <p>
+                        I'm an enthusiastic AI&DS student with a strong foundation in data analysis, 
+                        machine learning, and statistical methods. My expertise spans across Python, 
+                        SQL, and modern ML frameworks, with hands-on experience in developing 
+                        data-driven solutions.
+                    </p>
+                    <p>
+                        Currently pursuing my B-Tech Degree in Artificial Intelligence and Data Science, 
+                        I'm passionate about applying cutting-edge techniques to solve real-world problems 
+                        and contribute to data-driven decision making in various industries.
+                    </p>
                    
-            </div>
-         </div>
-        </div>
-        <!-----About---------->
-        <div id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="mypic1.jpg">
+                </div>
+                <div class="about-details">
+                    <div class="detail-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h4>Education</h4>
+                        <p>AI & Data Science<br>MIT, Maharashtra</p>
                     </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p> Hello ,<br>I am Ashish zanke currently I am student of 2nd Year pursuing B-Tech Engineering in the feild of Artificial Intelligience And Data Science (AI & DS)Stream...</p>
-                        
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onClick="opentab('experience')">Experience</p>
-                            <p class="tab-links"onClick="opentab('education')">Education</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>From Networking cource </span><br> knowledge of (cisco Packet tracer software).</li>
-                                <li><span>Advanced Data Entry</span><br>From NIIT Foundation.</li>
-                                <li><span>Sep 2022 - Nov 2022</span><br>Internshala Training <br>
-                                    I have completed 8Weeks online Certified trainning
-                                    on Web Development .
-                                    </li>
-                            </ul>
+                    <div class="detail-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Maharashtra, India</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>zanke2003@gmail.com</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+91 94_____85</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                  <li><span>2023</span><br>This website is my 1st Trial.
-                                    </li>
-                            </ul>
-
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
                         </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2019</span><br>10th pass</li>
-                                <li><span>2021</span><br>12th pass</li>
-                                <li><span>2022</span><br>learned Coding languages<br>C ,Python,c++,java</li>
-                                <li><span>2022</span><br>web development<br>learned languages(HTML,CSS,Bootstrap,DBMS,PHP,JS,React).</li>
-                            </ul>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="skill-category">
+                    <h3>Data & Analytics</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-calculator"></i>
+                            <span>NumPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Matplotlib</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-area"></i>
+                            <span>Seaborn</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-table"></i>
+                            <span>Tableau</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>MySQL</span>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-<!--------------Servives--------------------->
-<div id="hobby">
-    <div class="container">
-        <h1 class="sub-title">Hobbies</h1>
-        <div class="hobbies-list">
-            <div>
-                <i class="fa-solid fa-terminal"></i>
-                <h2>Codding </h2>
-                <p>Dream</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-headphones"></i>
-                <h2>Singing</h2>
-                <p>Peace</p>
-                <a href="https://www.youtube.com/watch?v=Z3wd7U0VjQw">Learn more</a>
-            </div>
-            <div>
-                 <i class="fa-solid fa-user-secret"></i>
-                 <h2>Ethical Hacking</h2>
-                 <p>Dream</p>
-                 <a href="#">Learn more</a>
-                 
-            </div>
-        </div>
+    </section>
 
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Some of my recent work and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Alumni-Connect</h3>
+                        <span class="project-type">MERN Stack</span>
+                    </div>
+                    <p class="project-description">
+                        AI-powered Alumni–Student networking Webapp, real-time chat, Studnet forum, Department-wise Posts & Events, Admin dashboard, AI Alumni Recommendation, and AI chatbot.
+                    </p>
+                    <div class="project-tech">
+                        <span>MERN</span>
+                        <span>Socket.io</span>
+                        <span>Cloudinary</span>
+                        <span>Flask</span>
+                        <span>JWT</span>
+                        <span>Tailwind</span>
+                        <Span>Python</Span>
+                    </div>
+                    
+                </div>
 
-</div>
-<!-- -------------portfolio--------- -->
-<div id="portfolio">
-    <div class="container">
-        <h2 class="sub-title">My Journey of Education</h2>
-        <div class="work-list">
-                <div class="work">
-                    <img src="images16.jpg" id="h">
-                    <div class="layer">
-                        <h3>10th School</h3>
-                        <p>School Name is,<br>Swami Vivekanand Acadamy <br> Aurangabaad,Maharashtra</p>
-                            <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmitpune.ac.in%2Fimages%2Flanding-gallery%2Fswami-vivekanand-academy-english-medium%2Fbanner1.jpg&imgrefurl=https%3A%2F%2Fmitpune.ac.in%2Fschools%2F2015-07-08-12-23-33%2Fssc%2Fswami-vivekanand-academy-english-medium-aurangabad.html&tbnid=hBI0UfcrAttEsM&vet=12ahUKEwj314eF46r8AhU6BLcAHdBoBQ0QMygAegUIARDBAQ..i&docid=TMhPePm7WzugMM&w=880&h=262&q=swami%20vivwkanand%20acadmy%20%20aurangabad%20pictures&hl=en-US&ved=2ahUKEwj314eF46r8AhU6BLcAHdBoBQ0QMygAegUIARDBAQ"><i class="fa-solid fa-up-right-from-square"></i></a>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Voice Assistant</h3>
+                        <span class="project-type">Desktop assistant</span>
+                    </div>
+                    <p class="project-description">
+                        Intelligent voice assistant with natural language processing capabilities. 
+                        Implements speech recognition and text-to-speech functionality.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Speech Recognition</span>
+                        <span>Ai/ML</span>
+                        <span>Hugging Face</span>
+                        <span>FastAPI</span>
+                        <span>Flask</span>
+                        <span>NLTK / spaCy / Transformers</span>
+                    </div>
+                    
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SkillBridge Ai agent</h3>
+                        <span class="project-type">Ai Agent</span>
+                    </div>
+                    <p class="project-description">
+                        An AI-powered agent built on Realy.app that analyzes LinkedIn profiles, understands user goals, and automatically suggests personalized jobs, internships, and skill improvement tips via email.
+                    </p>
+                    <div class="project-tech">
+                        <span>Realy.app</span>
+                        <span>Web Scraping</span>
+                        <span> NLP</span>
+                        <span>Prompt Engineering</span>
                     
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images16.jpg" id="h">
-                    <div class="layer">
-                        <h3>11th & 12th College </h3>
-                        <p>My College is,<br> Shiv Chatarpati College <br>Aurangabaad,Maharashtra</p>
-                            <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic.collegedekho.com%2Fmedia%2Fimg%2Finstitute%2Fcrawled_images%2FShivchhatrapati_CollegeAurangabad1.jpg&imgrefurl=https%3A%2F%2Fwww.collegedekho.com%2Fcolleges%2Fadmission-shivchhatrapati-college-aurangabad&tbnid=lqFbXogpGsheHM&vet=12ahUKEwjW_J2Z7qr8AhWVjtgFHWTsCfcQMyglegUIARCIAg..i&docid=8_q8cWO4XEhxeM&w=433&h=116&q=shiv%20chattrapati%20college%20aurangabbad&hl=en-US&ved=2ahUKEwjW_J2Z7qr8AhWVjtgFHWTsCfcQMyglegUIARCIAg"><i class="fa-solid fa-up-right-from-square"></i></a>
-                    
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images16.jpg" id="h">
-                    <div class="layer">
-                        <h3>Enggneering College</h3>
-                        <p>MIT,<br> Maharashtra Institute Of Technology(an Autonomous Institute)<br>Aurangabaad,Maharashtra</p>
-                            <a href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fgetmyuni.azureedge.net%2Fcollege-image%2Fbig%2Fgs-mandal-s-marathwada-institute-of-technology-gsmmit-aurangabad.jpg&imgrefurl=https%3A%2F%2Fwww.getmyuni.com%2Fcollege%2Fgs-mandal-s-marathwada-institute-of-technology-gsmmit-aurangabad&tbnid=RdNCczpdSRV16M&vet=12ahUKEwi8nfeW6ar8AhUvjNgFHfq6DJcQMygCegUIARC5AQ..i&docid=SpmC0YRue8k27M&w=525&h=350&q=maharashtra%20institute%20college%20aurangabad%20pictures&hl=en-US&ved=2ahUKEwi8nfeW6ar8AhUvjNgFHfq6DJcQMygCegUIARC5AQ"></i></a>
 
-                    </div>
-                </div>
-        </div>
-        <a href="#about" class="btn">see more</a>
-    </div>
-</div> 
-<!----------Contact------------>  
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>zanke2003@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i>9________5</p>
-                <div class="social-icons">
-                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/aashu_12344321/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>     
-                  <a href="" download class="btn btn2">Download CV</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                 <span id="msg"></span>
+                
             </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright @ Ashish . Made by <i class="fa-solid fa-heart"></i> it's_zanke</p>
-    </div>
-</div>    
-<script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>    
-<script>
-    var sidemenu = document.getElementById("sidemenu");
+    </section>
 
-    function openmenu(){
-        sidemenu.style.right="0";
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss opportunities and collaborations</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>zanke2003@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 94_____85</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/ashish-zanke</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="formStatus"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Ashish Vinod Zanke</h3>
+                    <p>Data Scientist & Analyst</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:zanke2003@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919404949885" title="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/ashish-zanke" title="LinkedIn" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/ashish-zanke" title="GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ashish Vinod Zanke. All rights reserved.</p>
+                <a href="Resume.pdf" download="Ashish_Zanke_Resume.pdf" class="footer-resume">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const formData = new URLSearchParams();
+  formData.append("name", document.getElementById('name').value);
+  formData.append("email", document.getElementById('email').value);
+  formData.append("subject", document.getElementById('subject').value);
+  formData.append("message", document.getElementById('message').value);
+
+  fetch("https://script.google.com/macros/s/AKfycbxTfzRGql-vUWYqU2V5ZtlgJrmVdN5weJpheTXae6k32-bXqWvKwBRAFEvoWOMsXaxAvg/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.result === "success") {
+      document.getElementById('formStatus').innerText = "✅ Message sent successfully!";
+      document.getElementById('contactForm').reset();
+    } else {
+      document.getElementById('formStatus').innerText = "⚠️ Error: " + data.message;
     }
-    function closemenu(){
-        sidemenu.style.right="-200px";
-    }
-    
+  })
+  .catch(err => {
+    document.getElementById('formStatus').innerText = "❌ Network error: " + err;
+  });
+});
 </script>
-<script> 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwMnZwfpS92RhUU-iSrqqNFFa7zs6Wr0bmgPLRO8sk-ZHJjoq2xhpk98Tg8CFPcnegc/exec' 
-    const form = document.forms['submit-to-google-sheet'] 
-    const msg = document.getElementById("msg")
-    form.addEventListener('submit', e => { 
-        e.preventDefault()
-         fetch(scriptURL, { method: 'POST', body: new FormData(form)}) 
-         .then(response => {
-            msg.innerHTML = "Message sent Successsully.!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-         })
-         .catch(error => console.error('Error!', error.message)) })
-</script>
+
 </body>
 </html>
